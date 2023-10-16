@@ -46,5 +46,12 @@ public class MemberController {
 		status.setComplete();
 		
 		return "redirect:/";
+		
+	}
+
+	@GetMapping("/signUp")
+	public String signUp() {
+		
+		return "/member/signUp";
 	}
 }
