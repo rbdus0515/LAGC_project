@@ -53,7 +53,7 @@
                     </a>
                     </div>
 
-                    <a href="#">
+                    <a href="/member/signUp">
                         회원가입
                     </a>
                 </section>

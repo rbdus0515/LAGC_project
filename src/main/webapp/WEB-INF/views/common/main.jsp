@@ -18,9 +18,7 @@
 </style>
 
 <style>
-@import
-	url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Nanum+Myeongjo:wght@700&family=Noto+Sans+KR:wght@200&family=Rubik+Iso&display=swap')
-	;
+  @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Asap:ital,wght@1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Sans+KR:wght@200&family=Rubik+Iso&display=swap');
 </style>
 </head>
 
