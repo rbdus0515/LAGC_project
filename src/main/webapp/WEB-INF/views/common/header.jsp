@@ -57,18 +57,18 @@
 					<a href="#">커뮤니티</a>
 				</section>
 				
-				<c:if test="">
+				<c:if test="${empty sessionScope.loginMember}">
 					<section>
-						<a href="#">로그인</a>
+						<a href="/member/login">로그인</a>
 					</section>
 				</c:if>
 
-				<c:if test="">
+				<c:if test="${not empty sessionScope.loginMember}">
 					<section>
-						<a href="#">마이페이지</a>
+						<a href="/member/myPage">마이페이지</a>
 					</section>
 					<section>
-						<a href="#">로그아웃</a>
+						<a href="/member/logout">로그아웃</a>
 					</section>
 				</c:if>
 

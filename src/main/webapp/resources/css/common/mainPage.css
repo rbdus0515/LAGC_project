@@ -50,7 +50,7 @@ html {
     font-family: 'Aref Ruqaa', serif;
 }
 
-#info-btn {
+#infoBtn {
     width: 50px;
     position: fixed;
     top: 87.3%;
@@ -59,9 +59,10 @@ html {
     background-color: #d2d2d2;
     border-radius: 50px;
     z-index: 1;
+    cursor : pointer;
 }
 
-#top-btn {
+#topBtn {
     width: 50px;
     position: fixed;
     top: 93.8%;
@@ -70,6 +71,7 @@ html {
     background-color: #d2d2d2;
     border-radius: 50px;
     z-index: 1;
+    cursor : pointer;
 }
 
 
