@@ -48,7 +48,9 @@
 			<button id="mainPage-btn2">지역별여행지 보러가기</button>
 		</a> 
 		
-		<a href="#main-container"><img id="top-btn"	src="/resources/img/탑버튼.png"></a>
+		<a href="#main-container"
+			><img id="topBtn"	src="/resources/img/탑버튼.png">
+		</a>
 		
 		
 	</section>
@@ -108,7 +110,7 @@
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>
-		<div>
+		<div id="testContent">
 			<img class="place-move-motion" src="/resources/img/서울 추천 콘텐츠 1.png">
 			<p>여의도 한강공원</p>
 		</div>
@@ -289,7 +291,9 @@
 
 	<jsp:include page="/WEB-INF/views/common/footer.jsp" />
 	<jsp:include page="/WEB-INF/views/common/howToUse.jsp" />
-	
+	<jsp:include page="/WEB-INF/views/content/popup.jsp" />
+
+	<script src="/resources/js/main.js"></script>
 
 </body>
 </html>
