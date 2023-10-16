@@ -28,8 +28,9 @@
 
 				<section class="empty"></section>
 				<section>
-					<a href="#">
-						<p>날씨API</p>
+					<a id="weatherSection" href="https://weather.naver.com/" target="_blank">
+						<img class="weatherIcon" id="weatherIconImg">
+						<div id="weather">날씨API</div>
 					</a>
 				</section>
 			</section>
@@ -78,6 +79,7 @@
 	</header>
 
 
+	<script src="/resources/js/weatherAPI.js"></script>
 
 </body>
 </html>
