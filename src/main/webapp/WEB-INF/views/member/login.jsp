@@ -21,7 +21,7 @@
 <!-- 메인 ---------------------------------------------------------------------------------------->
     <main class="mainContainer">
 
-        <form action="#" method="post">
+        <form action="login" method="post">
 
             <div class="loginContainer">
                 <section>
@@ -30,12 +30,12 @@
 
                 <section class="id">
                     <p>아이디</p>
-                    <input class="input" type="text" name="id">
+                    <input class="input" type="text" name="memberId">
                 </section>
 
                 <section class="password">
                     <p>비밀번호</p>
-                    <input class="input" type="password" name="pw">
+                    <input class="input" type="password" name="memberPw">
                 </section>
 
                 <button class="loginBtn" type="submit">로그인</button>
@@ -46,7 +46,7 @@
                         아이디 찾기 
                     </a>
                     
-                    <p> / </p>
+                    <p> &nbsp;/&nbsp; </p>
                     
                     <a href="/member/findPassword">
                         비밀번호 찾기
