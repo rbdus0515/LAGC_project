@@ -34,10 +34,11 @@ html {
 /* ?????????? ???? */
 #main-container {
     position: relative;
+    height : 100vh;
 }
 
 #mainPage-img {
-    width: 100%;
+	width:100%	
 }
 
 #title-container {
@@ -47,13 +48,17 @@ html {
     left: 73%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
-    font-family: 'Aref Ruqaa', serif;
+    font-family: 'Anton', sans-serif;
+}
+
+#title-container > span{
+	font-family: 'Exo', sans-serif;
 }
 
 #infoBtn {
     width: 50px;
     position: fixed;
-    top: 87.3%;
+    top: 85%;
     left: 98.5%;
     transform: translate(-50%, -50%);
     background-color: #d2d2d2;
@@ -65,7 +70,7 @@ html {
 #topBtn {
     width: 50px;
     position: fixed;
-    top: 93.8%;
+    top: 91.5%;
     left: 98.5%;
     transform: translate(-50%, -50%);
     background-color: #d2d2d2;

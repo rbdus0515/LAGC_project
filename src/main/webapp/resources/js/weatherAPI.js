@@ -45,6 +45,6 @@ function getWeather(){
         case 7: region = 'seoul'; num = 0; break;
     };
 
-}
+};
 
 setInterval(getWeather, 3000);
