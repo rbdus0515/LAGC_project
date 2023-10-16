@@ -79,7 +79,7 @@ html {
     border-radius: 30px;
     border: transparent;
     position: absolute;
-    top: 87%;
+    top: 85%;
     left: 90%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
@@ -92,7 +92,7 @@ html {
     border-radius: 30px;
     border: transparent;
     position: absolute;
-    top: 93.5%;
+    top: 91.5%;
     left: 90%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
@@ -131,6 +131,7 @@ html {
     width: 118px;
     height: 50px;
     border-radius: 10px;
+    border: none;
     font-size: 1.3125rem;
 }
 

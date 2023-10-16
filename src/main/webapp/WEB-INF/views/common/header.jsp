@@ -28,8 +28,9 @@
 
 				<section class="empty"></section>
 				<section>
-					<a href="#">
-						<p>날씨API</p>
+					<a id="weatherSection" href="https://weather.naver.com/" target="_blank">
+						<img class="weatherIcon" id="weatherIconImg">
+						<div id="weather">날씨API</div>
 					</a>
 				</section>
 			</section>
@@ -57,13 +58,13 @@
 					<a href="#">커뮤니티</a>
 				</section>
 				
-				<c:if test="">
+				<c:if test="${empty sessionScope.loginMember}">
 					<section>
 						<a href="#">로그인</a>
 					</section>
 				</c:if>
 
-				<c:if test="">
+				<c:if test="${not empty sessionScope.loginMember}">
 					<section>
 						<a href="#">마이페이지</a>
 					</section>
@@ -78,6 +79,7 @@
 	</header>
 
 
+	<script src="/resources/js/weatherAPI.js"></script>
 
 </body>
 </html>
