@@ -55,12 +55,6 @@ body > section {
     height: auto;
 }
 
-/* bottom */
-#bottom {
-    display: flex;
-    height: 300px;
-}
-
 #leftArea, #rightArea {
     flex-basis: 20%;
 }

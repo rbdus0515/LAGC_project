@@ -107,7 +107,7 @@
 	<!-- 서울 -->
 	<section class="region-place-btn">
 		<div id="button-magin"></div>
-		<a href="/content/detail/seo"><button class="region-btn">서울</button></a>
+		<a href="/content/detail?area=seo"><button class="region-btn">서울</button></a>
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>
@@ -133,7 +133,7 @@
 	<!-- 경기 / 인천 -->
 	<section class="region-place-btn">
 		<div id="button-magin"></div>
-		<a href="/content/detail/gyeinc"><button class="region-btn">경기 / 인천</button></a>
+		<a href="/content/detail?area=gyeinc"><button class="region-btn">경기 / 인천</button></a>
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>
