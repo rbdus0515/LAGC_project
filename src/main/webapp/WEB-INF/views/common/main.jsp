@@ -46,7 +46,7 @@
 		</button>
 		
 		<a	href="#shortcut-region-place-btn">
-			<button id="mainPage-btn2">지역별여행지 보러가기</button>
+			<button id="mainPage-btn2">지역별 여행지 보러 가기</button>
 		</a> 
 		
 		<a href="#main-container"
