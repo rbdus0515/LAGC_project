@@ -12,7 +12,13 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    
     </style>
+   
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Exo:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Qwitcher+Grypen:wght@400;700&family=Source+Code+Pro:ital,wght@1,900&display=swap');
+</style>
+    
 </head>
 <body>
 
@@ -30,7 +36,7 @@
 				<section>
 					<a id="weatherSection" href="https://weather.naver.com/" target="_blank">
 						<img class="weatherIcon" id="weatherIconImg">
-						<div id="weather">날씨API</div>
+						<div id="weather"></div>
 					</a>
 				</section>
 			</section>
