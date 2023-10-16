@@ -58,10 +58,10 @@
 
 			<section id="menu-Btn">
 				<section>
-					<a href="#">고객지원</a>
+					<a href="/clientService/clientServicePage">고객지원</a>
 				</section>
 				<section>
-					<a href="#">커뮤니티</a>
+					<a href="/community/communityPage">커뮤니티</a>
 				</section>
 				
 				<c:if test="${empty sessionScope.loginMember}">
