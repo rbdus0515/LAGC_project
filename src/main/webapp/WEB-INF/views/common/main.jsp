@@ -22,6 +22,9 @@
 	url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Nanum+Myeongjo:wght@700&family=Noto+Sans+KR:wght@200&family=Rubik+Iso&display=swap')
 	;
 </style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap:ital,wght@1,600&family=Exo+2:wght@600&family=Exo:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Qwitcher+Grypen:wght@400;700&family=Source+Code+Pro:ital,wght@1,900&display=swap');
+</style>
 </head>
 
 <body>
@@ -48,7 +51,9 @@
 			<button id="mainPage-btn2">지역별여행지 보러가기</button>
 		</a> 
 		
-		<a href="#main-container"><img id="top-btn"	src="/resources/img/탑버튼.png"></a>
+		<a href="#main-container"
+			><img id="topBtn"	src="/resources/img/탑버튼.png">
+		</a>
 		
 		
 	</section>
@@ -104,11 +109,11 @@
 	<!-- 서울 -->
 	<section class="region-place-btn">
 		<div id="button-magin"></div>
-		<button class="region-btn">서울</button>
+		<a href="/content/detail/seo"><button class="region-btn">서울</button></a>
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>
-		<div>
+		<div id="testContent">
 			<img class="place-move-motion" src="/resources/img/서울 추천 콘텐츠 1.png">
 			<p>여의도 한강공원</p>
 		</div>
@@ -130,7 +135,7 @@
 	<!-- 경기 / 인천 -->
 	<section class="region-place-btn">
 		<div id="button-magin"></div>
-		<button class="region-btn">경기 / 인천</button>
+		<a href="/content/detail/gyeinc"><button class="region-btn">경기 / 인천</button></a>
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>
@@ -289,7 +294,9 @@
 
 	<jsp:include page="/WEB-INF/views/common/footer.jsp" />
 	<jsp:include page="/WEB-INF/views/common/howToUse.jsp" />
-	
+	<jsp:include page="/WEB-INF/views/content/popup.jsp" />
+
+	<script src="/resources/js/main.js"></script>
 
 </body>
 </html>

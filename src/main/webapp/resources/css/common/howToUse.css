@@ -1,11 +1,11 @@
-/********** �쟾泥� �솕硫� ******************************************************/
+/********** 전체 화면  ******************************************************/
 .mainContainer {
-	width: 50rem;
+	width: 70rem;
 	display: flex;
 	flex-direction: column;
 }
 
-/********** X 踰꾪듉 ******************************************************/
+/********** X 버튼 ******************************************************/
 #closeBtn {
 	background-color: transparent;
 	border: none;
@@ -18,10 +18,10 @@
 	width: 1rem;
 }
 
-/********** 硫붿씤 �솕硫� ******************************************************/
+/********** 메인 화면 ******************************************************/
 .wrap {
 	position: relative;
-	width: 50rem;
+	width: 70rem;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -48,7 +48,7 @@
 }
 
 .slide_item img {
-	width: 50rem;
+	width: 70rem;
 }
 
 .left, .right {
@@ -110,7 +110,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.2);
 }
 
 

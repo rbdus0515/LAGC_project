@@ -12,7 +12,13 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    
     </style>
+   
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Exo:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Qwitcher+Grypen:wght@400;700&family=Source+Code+Pro:ital,wght@1,900&display=swap');
+</style>
+    
 </head>
 <body>
 
@@ -28,8 +34,9 @@
 
 				<section class="empty"></section>
 				<section>
-					<a href="#">
-						<p>날씨API</p>
+					<a id="weatherSection" href="https://weather.naver.com/" target="_blank">
+						<img class="weatherIcon" id="weatherIconImg">
+						<div id="weather"></div>
 					</a>
 				</section>
 			</section>
@@ -57,18 +64,18 @@
 					<a href="/community/communityPage">커뮤니티</a>
 				</section>
 				
-				<c:if test="">
+				<c:if test="${empty sessionScope.loginMember}">
 					<section>
-						<a href="#">로그인</a>
+						<a href="/member/login">로그인</a>
 					</section>
 				</c:if>
 
-				<c:if test="">
+				<c:if test="${not empty sessionScope.loginMember}">
 					<section>
-						<a href="#">마이페이지</a>
+						<a href="/member/myPage">마이페이지</a>
 					</section>
 					<section>
-						<a href="#">로그아웃</a>
+						<a href="/member/logout">로그아웃</a>
 					</section>
 				</c:if>
 
@@ -78,6 +85,7 @@
 	</header>
 
 
+	<script src="/resources/js/weatherAPI.js"></script>
 
 </body>
 </html>

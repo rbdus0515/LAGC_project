@@ -34,10 +34,11 @@ html {
 /* ?????????? ???? */
 #main-container {
     position: relative;
+    height : 100vh;
 }
 
 #mainPage-img {
-    width: 100%;
+	width:100%	
 }
 
 #title-container {
@@ -47,29 +48,35 @@ html {
     left: 73%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
-    font-family: 'Aref Ruqaa', serif;
+    font-family: 'Anton', sans-serif;
 }
 
-#info-btn {
+#title-container > span{
+	font-family: 'Exo', sans-serif;
+}
+
+#infoBtn {
     width: 50px;
     position: fixed;
-    top: 87.3%;
+    top: 85%;
     left: 98.5%;
     transform: translate(-50%, -50%);
     background-color: #d2d2d2;
     border-radius: 50px;
     z-index: 1;
+    cursor : pointer;
 }
 
-#top-btn {
+#topBtn {
     width: 50px;
     position: fixed;
-    top: 93.8%;
+    top: 91.5%;
     left: 98.5%;
     transform: translate(-50%, -50%);
     background-color: #d2d2d2;
     border-radius: 50px;
     z-index: 1;
+    cursor : pointer;
 }
 
 
@@ -79,7 +86,7 @@ html {
     border-radius: 30px;
     border: transparent;
     position: absolute;
-    top: 87%;
+    top: 85%;
     left: 90%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
@@ -92,7 +99,7 @@ html {
     border-radius: 30px;
     border: transparent;
     position: absolute;
-    top: 93.5%;
+    top: 91.5%;
     left: 90%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
@@ -131,6 +138,7 @@ html {
     width: 118px;
     height: 50px;
     border-radius: 10px;
+    border: none;
     font-size: 1.3125rem;
 }
 
