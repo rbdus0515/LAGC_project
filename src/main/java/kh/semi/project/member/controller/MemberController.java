@@ -69,13 +69,38 @@ public class MemberController {
 		
 	}
 
-	
+
+	// 회원가입 페이지 이동
 	@GetMapping("/signUp")
 	public String signUp() {
 		
 		return "/member/signUp";
 	}
 	
+
+	// 회원가입 진행
+	@PostMapping
+	public String signUp(Member inputMember,
+						RedirectAttributes ra ) {
+		
+		int result = service.signUp(inputMember);
+		
+		String path = "redirect:";
+		String message = null;
+		
+		if(result > 0) {
+			path += "/";
+			message = inputMember.getMemberNickname() + "님 가입을 환영합니다.";
+		} else {
+			path += "signUp";
+			message = "회원가입 실패";
+		}
+		
+		ra.addFlashAttribute("message",message);
+		
+		return path;
+	}
+
 	
 	@PostMapping("/login")
 	public String memberLogin( Member inputMember, Model model, 
