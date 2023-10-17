@@ -69,7 +69,7 @@
 
 				<c:if test="${not empty sessionScope.loginMember}">
 					<section>
-						<a href="/member/myPage">마이페이지</a>
+						<a href="/myPage/myPages">마이페이지</a>
 					</section>
 					<section>
 						<a href="/member/logout">로그아웃</a>
