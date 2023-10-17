@@ -9,3 +9,4 @@ infoBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   modal.classList.add('hidden');
 });
+

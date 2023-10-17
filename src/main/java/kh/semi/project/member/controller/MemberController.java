@@ -75,13 +75,24 @@ public class MemberController {
 	
 		
 		Member loginMember = service.memberLogin(inputMember);
+		String msg = null;
+		String path = null;
 		
 		if(loginMember != null) { // 로그인 성공
-
 			
 			model.addAttribute("loginMember", loginMember); 
-	}
-		return "redirect:/";
+			
+			
+		} else {
+			
+			msg = "회원 정보가 일치하지 않습니다.";
+			ra.addFlashAttribute("msg", msg);
+			
+			path = "login";
+						
+		}
+
+		return "/member/" + path;
 		
 	}
 

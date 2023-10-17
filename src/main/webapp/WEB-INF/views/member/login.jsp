@@ -38,8 +38,9 @@
                     <input class="input" type="password" name="memberPw">
                 </section>
 
-                <button class="loginBtn" type="submit">로그인</button>
+                <button id="loginBtn" class="loginBtn" type="submit">로그인</button>
 
+		</form>
                 <section class="findIdPwAndSingup">
                     <div class="findIdPw">
                     <a href="/member/findId">
@@ -77,8 +78,12 @@
 
             </div>
 
-        </form>
+        
     </main>
+
+<jsp:include page="/WEB-INF/views/content/popup.jsp" />
+
+<script src="/resources/js/main.js"></script>
 
 </body>
 
