@@ -159,7 +159,7 @@
 	<!-- 강원 -->
 	<section class="region-place-btn">
 		<div id="button-magin"></div>
-		<button class="region-btn">강원</button>
+		<a href="/content/detail?area=gan"><button class="region-btn">강원</button></a>
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>
@@ -185,7 +185,7 @@
 	<!-- 충청 -->
 	<section class="region-place-btn">
 		<div id="button-magin"></div>
-		<button class="region-btn">충청</button>
+		<a href="/content/detail?area=chu"><button class="region-btn">충청</button></a>
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>
@@ -211,7 +211,7 @@
 	<!-- 전라 -->
 	<section class="region-place-btn">
 		<div id="button-magin"></div>
-		<button class="region-btn">전라</button>
+		<a href="/content/detail?area=jeo"><button class="region-btn">전라</button></a>
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>
@@ -237,7 +237,7 @@
 	<!-- 경상 -->
 	<section class="region-place-btn">
 		<div id="button-magin"></div>
-		<button class="region-btn">경상</button>
+		<a href="/content/detail?area=gye"><button class="region-btn">경상</button></a>
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>
@@ -263,7 +263,7 @@
 	<!-- 제주 -->
 	<section class="region-place-btn">
 		<div id="button-magin"></div>
-		<button class="region-btn">제주</button>
+		<a href="/content/detail?area=jej"><button class="region-btn">제주</button></a>
 	</section>
 	<section class="region-place">
 		<div class="region-empty"></div>

@@ -6,18 +6,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>detailPageGyeInc</title>
+    <title>detailPageGye</title>
 
-    <link rel="stylesheet" href="/resources/css/content/gyeonggiIncheon.css">
+    <link rel="stylesheet" href="/resources/css/content/gyeongsang.css">
 
     <script src="https://kit.fontawesome.com/f821b57119.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section>
     	<jsp:include page="/WEB-INF/views/common/header.jsp" />
-    	
+    
         <!-- top -->
-        <div id="top">"Gyeonggi,Incheon"</div>
+        <div id="top">"Gyeong-sang"</div>
 
         <!-- main -->
         <div id="main">
@@ -31,11 +31,11 @@
                     <div class="placeSec">
                         <div class="blank"></div>
                         <div class="placeImg">
-                            <img src="/resources/img/content/gyeonggiIncheon/파라다이스씨메르.png" class="contImg" onclick="aa()">
+                            <img src="/resources/img/content/gyeongsang/해동용궁사.png" class="contImg" onclick="aa()">
                         </div>
                         <div class="placeTitSec">
                             <div class="tit">
-                                파라다이스 씨메르
+                                해동용궁사
                             </div>
                             <div class="delArea">
                                 <button type="button" class="xBtn">X</button>
@@ -45,11 +45,11 @@
                     <div class="placeSec">
                         <div class="blank"></div>
                         <div class="placeImg">
-                            <img src="/resources/img/content/gyeonggiIncheon/캐리비안베이.png" class="contImg">
+                            <img src="/resources/img/content/gyeongsang/포항스페이스워크.png" class="contImg">
                         </div>
                         <div class="placeTitSec">
                             <div class="tit">
-                                캐리비안 베이
+                                포항 스페이스 워크
                             </div>
                             <div class="delArea">
                                 <button type="button" class="xBtn">X</button>
@@ -59,11 +59,11 @@
                     <div class="placeSec">
                         <div class="blank"></div>
                         <div class="placeImg">
-                            <img src="/resources/img/content/gyeonggiIncheon/한국민속촌.png" class="contImg">
+                            <img src="/resources/img/content/gyeongsang/감천문화마을.png" class="contImg">
                         </div>
                         <div class="placeTitSec">
                             <div class="tit">
-                                한국민속촌
+                                감천 문화마을
                             </div>
                             <div class="delArea">
                                 <button type="button" class="xBtn">X</button>
@@ -73,11 +73,11 @@
                     <div class="placeSec">
                         <div class="blank"></div>
                         <div class="placeImg">
-                            <img src="/resources/img/content/gyeonggiIncheon/광명동굴.png" class="contImg">
+                            <img src="/resources/img/content/gyeongsang/호미곶해맞이광장.png" class="contImg">
                         </div>
                         <div class="placeTitSec">
                             <div class="tit">
-                                광명 동굴
+                                호미곶 해맞이광장
                             </div>
                             <div class="delArea">
                                 <button type="button" class="xBtn">X</button>
@@ -89,11 +89,11 @@
                     <div class="placeSec">
                         <div class="blank"></div>
                         <div class="placeImg">
-                            <img src="/resources/img/content/gyeonggiIncheon/에버랜드.png" class="contImg">
+                            <img src="/resources/img/content/gyeongsang/해운대블루라인파크.png" class="contImg">
                         </div>
                         <div class="placeTitSec">
                             <div class="tit">
-                                에버랜드
+                                해운대 블루라인파크
                             </div>
                             <div class="delArea">
                                 <button type="button" class="xBtn">X</button>
@@ -103,11 +103,11 @@
                     <div class="placeSec">
                         <div class="blank"></div>
                         <div class="placeImg">
-                            <img src="/resources/img/content/gyeonggiIncheon/인천차이나타운.png" class="contImg">
+                            <img src="/resources/img/content/gyeongsang/거제도.png" class="contImg">
                         </div>
                         <div class="placeTitSec">
                             <div class="tit">
-                                인천 차이나타운
+                                거제도
                             </div>
                             <div class="delArea">
                                 <button type="button" class="xBtn">X</button>
@@ -117,11 +117,11 @@
                     <div class="placeSec">
                         <div class="blank"></div>
                         <div class="placeImg">
-                            <img src="/resources/img/content/gyeonggiIncheon/인천대공원.png" class="contImg">
+                            <img src="/resources/img/content/gyeongsang/동궁과월지.png" class="contImg">
                         </div>
                         <div class="placeTitSec">
                             <div class="tit">
-                                인천대공원
+                                동궁과 월지
                             </div>
                             <div class="delArea">
                                 <button type="button" class="xBtn">X</button>
@@ -131,11 +131,11 @@
                     <div class="placeSec">
                         <div class="blank"></div>
                         <div class="placeImg">
-                            <img src="/resources/img/content/gyeonggiIncheon/송도센트럴파크.png" class="contImg">
+                            <img src="/resources/img/content/gyeongsang/태화강국가정원.png" class="contImg">
                         </div>
                         <div class="placeTitSec">
                             <div class="tit">
-                                송도 센트럴파크
+                                태화강 국가정원
                             </div>
                             <div class="delArea">
                                 <button type="button" class="xBtn">X</button>

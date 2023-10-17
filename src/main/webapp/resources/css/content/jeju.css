@@ -38,7 +38,7 @@ body > section {
 /* top */
 #top {
     font-family: 'Arita-buri-SemiBold';
-    background-image: url("/resources/img/content/gyeonggiIncheon/경기인천메인이미지.png");
+    background-image: url("/resources/img/content/jeju/제주메인이미지.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -46,9 +46,7 @@ body > section {
     height: auto;
     line-height: 375px;
     font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 1100px;
 }
 
 /* main */
