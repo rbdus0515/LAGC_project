@@ -5,20 +5,25 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/content/detail")
+@RequestMapping("/content")
 public class ContentController {
 	
-	@GetMapping("/seo")
-	public String selectSeo() {
+	@GetMapping("/detail")
+	public String selectContentDetail(String area) {
 		
-		return "content/seoul";
+		System.out.println("area : " + area);
 		
-	}
-	
-	@GetMapping("/gyeinc")
-	public String selectGyeInc() {
+		String path = "content/";
 		
-		return "content/gyeonggiIncheon";
+		if(area.equals("seo")) {
+			path += "seoul";
+			
+		} else if(area.equals("gyeinc")) {
+			path += "gyeonggiIncheon";
+			
+		}
+		
+		return path;
 		
 	}
 }

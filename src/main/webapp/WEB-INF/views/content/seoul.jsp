@@ -15,6 +15,7 @@
 <body>
     <section>
     	<jsp:include page="/WEB-INF/views/common/header.jsp" />
+    	
         <!-- top -->
         <div id="top">"Seoul"</div>
 
@@ -219,7 +220,7 @@
         </div>
 
         <!-- bottom -->
-        <div id="bottom"></div>
+        <jsp:include page="/WEB-INF/views/common/footer.jsp" />
     </section>
     
     <a href="#top"><img src="/resources/img/content/button/탑버튼.png" id="upBtn"></a>
