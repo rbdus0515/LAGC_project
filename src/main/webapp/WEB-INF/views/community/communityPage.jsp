@@ -43,7 +43,7 @@
                             
                             <section class="com-peopleComment-top-sec">
                                 <div>
-                                    <a class="comPeopleTitle" href="#">
+                                    <a class="comPeopleTitle" id="test">
                                         홈페이지 좋지
                                     </a>
                                 </div>
@@ -198,6 +198,8 @@
         </secion>
     </form>
     
+    <jsp:include page="/WEB-INF/views/community/communityPopup.jsp"/>
+    <script src="/resources/js/community.js"></script>
 </body>
 
 </html>
