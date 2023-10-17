@@ -11,6 +11,10 @@ body {
     padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 button {
     cursor: pointer;
 }
@@ -52,7 +56,7 @@ header {
 #clService-headImage-box {
     width: 100%;
     height: 250px;
-    background-image: url("/semiProjectImage/기차-고객지원.jpg");
+    background-image: url("/resources/img/clientService/기차-고객지원.jpg");
     background-size: cover;
 }
 

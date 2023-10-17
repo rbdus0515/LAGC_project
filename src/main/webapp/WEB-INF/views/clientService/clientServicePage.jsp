@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/resources/css/communityService/clientServicePage.css">
+<link rel="stylesheet" href="/resources/css/clientService/clientServicePage.css">
 <title>고객지원 페이지</title>
 </head>
 <body>
@@ -61,7 +61,7 @@
 
             <section id="teamImage-area">
                 <div>
-                    <img src="/semiProjectImage/고객지원2.jpg" alt="여행자 사진">
+                    <img src="/resources/img/clientService/고객지원2.jpg" alt="여행자 사진">
                 </div>
             </section>
 
