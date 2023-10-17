@@ -42,6 +42,19 @@
 		AND MEMBER_ID = #{memberId}
 	</select>
 	
+	<insert id="signUp" parameterType="Member">
+		INSERT INTO "MEMBER"
+		VALUESSEQ_MEMBER_NO.NEXTVAL
+	        , #{memberId}
+	        , #{memberPw}
+			, #{memberName}
+			, TO_CHAR(TO_DATE(#{memberPno}, 'YYYY-MM-DD'), 'YYMMDD')
+	        , #{memberEmail}
+	        , #{memberPhone}
+	        , #{memberNickname}
+	        , DEFAULT, DEFAULT, DEFAULT)
+	</insert>
+	
 
 
 </mapper>
