@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 
-    <link rel="stylesheet" href="../CSS/searchPwLook.css">
+    <link rel="stylesheet" href="/resources/css/common/loginPopup.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
@@ -14,11 +14,13 @@
 </head>
 <body>
 
+	<div id="loginPopupModalContainer" class="hidden">
+
 	<section id="main-container">
         
         <div id="close-container">
             <button type="button" id="close-btn">
-                <img src="../img/닫기버튼.png" alt="">
+                <img src="/resources/img/닫기버튼.png" alt="">
             </button>
         </div>
 
@@ -26,7 +28,7 @@
             <div class="margin"></div>
             
             <div id="logo-pw-section">
-                <img src="../img/로고.png">
+                <img src="/resources/img/로고.png">
                 <section id="pw-section">
                     <p>로그인이 완료되었습니다.</p>
                     <p>${loginMember.memberId}님</p>
@@ -39,6 +41,8 @@
         </section>
         
     </section>
+    
+   </div>
 
 </body>
 </html>

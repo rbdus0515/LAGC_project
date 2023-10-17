@@ -24,5 +24,4 @@
 	<context:component-scan base-package="kh.semi.project" />
 	
 	
-	
 </beans:beans>
