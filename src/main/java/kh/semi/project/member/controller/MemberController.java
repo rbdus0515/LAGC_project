@@ -7,7 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -55,13 +57,18 @@ public class MemberController {
 	 * @return
 	 */
 	@GetMapping("/logout")
-	public String logout(SessionStatus status /*HttpSession session*/) {
+	public String logout(SessionStatus status, RedirectAttributes ra) {
+		
+		String msg = "로그아웃 되었습니다.";
+		
+		ra.addFlashAttribute("msg", msg);
 		
 		status.setComplete();
 		
 		return "redirect:/";
 		
 	}
+
 
 	// 회원가입 페이지 이동
 	@GetMapping("/signUp")
@@ -70,6 +77,7 @@ public class MemberController {
 		return "/member/signUp";
 	}
 	
+
 	// 회원가입 진행
 	@PostMapping
 	public String signUp(Member inputMember,
@@ -92,20 +100,36 @@ public class MemberController {
 		
 		return path;
 	}
+
 	
 	@PostMapping("/login")
 	public String memberLogin( Member inputMember, Model model, 
-			RedirectAttributes ra, HttpServletResponse resp) {
+			RedirectAttributes ra, HttpServletResponse resp,
+			@RequestHeader(value = "referer") String referer) {
 	
 		
 		Member loginMember = service.memberLogin(inputMember);
+		String msg = null;
+		String path = "redirect:";
 		
 		if(loginMember != null) { // 로그인 성공
-
 			
 			model.addAttribute("loginMember", loginMember); 
-	}
-		return "redirect:/";
+			msg = "로그인이 완료되었습니다.";
+			path += "/";
+			ra.addFlashAttribute("msg", msg);
+			
+		} else {
+			
+			path += referer;
+						
+			msg = "회원 정보가 일치하지 않습니다.";
+			ra.addFlashAttribute("msg", msg);
+
+		}
+		
+
+		return path;
 		
 	}
 

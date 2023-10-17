@@ -13,6 +13,16 @@
 
 <body>
 
+	<c:if test="${not empty msg}">
+
+	<script>
+	
+		alert('${msg}')
+
+	</script>
+
+	</c:if>
+
 <!-- 홈 로고 ---------------------------------------------------------------------------------------->
     <a href="/">
         <img id="homelogo" class="logo" src="/resources/img/logo.png" alt="">
@@ -21,8 +31,8 @@
 <!-- 메인 ---------------------------------------------------------------------------------------->
     <main class="mainContainer">
 
-        <form action="login" method="post">
-
+        <form action="login" method="post" id="loginFrm" >
+ 
             <div class="loginContainer">
                 <section>
                     <img class="logo" src="/resources/img/logo.png" alt="">
@@ -30,16 +40,19 @@
 
                 <section class="id">
                     <p>아이디</p>
-                    <input class="input" type="text" name="memberId">
+                    <input class="input" type="text" name="memberId" id="memberId">
                 </section>
 
                 <section class="password">
                     <p>비밀번호</p>
-                    <input class="input" type="password" name="memberPw">
+                    <input class="input" type="password" name="memberPw" id="memberPw">
                 </section>
 
-                <button class="loginBtn" type="submit">로그인</button>
+                <button id="loginBtn" class="loginBtn" type="submit">로그인</button>
 
+		</form>
+
+        
                 <section class="findIdPwAndSingup">
                     <div class="findIdPw">
                     <a href="/member/findId">
@@ -77,8 +90,10 @@
 
             </div>
 
-        </form>
+        
     </main>
+
+    <script src="/resources/js/login.js"></script>
 
 </body>
 
