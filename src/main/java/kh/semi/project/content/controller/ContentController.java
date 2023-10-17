@@ -21,6 +21,21 @@ public class ContentController {
 		} else if(area.equals("gyeinc")) {
 			path += "gyeonggiIncheon";
 			
+		} else if(area.equals("gan")) {
+			path += "gangwon";
+			
+		} else if(area.equals("chu")) {
+			path += "chungcheong";
+			
+		} else if(area.equals("jeo")) {
+			path += "jeolla";
+			
+		} else if(area.equals("gye")) {
+			path += "gyeongsang";
+			
+		} else if(area.equals("jej")) {
+			path += "jeju";
+			
 		}
 		
 		return path;
