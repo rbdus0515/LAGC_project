@@ -13,6 +13,7 @@
 </head>
 
 <body>
+		<jsp:include page="/WEB-INF/views/common/header.jsp" />
 	<form>
 
         <secion id="communityPage">
@@ -198,6 +199,7 @@
         </secion>
     </form>
     
+    <jsp:include page="/WEB-INF/views/common/footer.jsp" />
     <jsp:include page="/WEB-INF/views/community/communityPopup.jsp"/>
     <script src="/resources/js/community.js"></script>
 </body>

@@ -125,7 +125,7 @@
             <div class="my-plan">
                 <div class="my-plan-title">나의 일정</div>
                 <div class="my-plan-1">
-                    <a href="#"><img class="my-plan-img" src="/resources/img/myPage/추천 콘텐츠 18.jpg"></a>
+                    <a href="/myPlan/myPlans"><img class="my-plan-img" src="/resources/img/myPage/추천 콘텐츠 18.jpg"></a>
                     <div class="plan-main">
                         <div class="plan-title"><a href="#">수도권 여행</a></div>
                         <div class="plan-D-day">D-8</div>

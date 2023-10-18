@@ -120,7 +120,7 @@ public class MemberController {
 		if(loginMember != null) { // 로그인 성공
 			
 			model.addAttribute("loginMember", loginMember); 
-			msg = "로그인이 완료되었습니다.";
+			msg = "로그인 되었습니다.";
 			path += "/";
 			ra.addFlashAttribute("msg", msg);
 			
