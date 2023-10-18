@@ -25,7 +25,7 @@
 
 <!-- 홈 로고 ---------------------------------------------------------------------------------------->
     <a href="/">
-        <img id="homelogo" class="logo" src="/resources/img/logo.png" alt="">
+        <img id="homelogo" class="logo" src="/resources/img/common/main/로고.png" alt="">
     </a>
 
 <!-- 메인 ---------------------------------------------------------------------------------------->
@@ -35,7 +35,7 @@
  
             <div class="loginContainer">
                 <section>
-                    <img class="logo" src="/resources/img/logo.png" alt="">
+                    <img class="logo" src="/resources/img/common/main/로고.png" alt="">
                 </section>
 
                 <section class="id">
@@ -75,15 +75,15 @@
 
                 <section class="snsLogin">
                     <a href="#">
-                        <img class="sns" src="/resources/img/logo(google).png" alt="">
+                        <img class="sns" src="/resources/img/common/main/logo(google).png" alt="">
                     </a>
 
                     <a href="#">
-                        <img class="sns" src="/resources/img/logo(facebook).png" alt="">
+                        <img class="sns" src="/resources/img/common/main/logo(facebook).png" alt="">
                     </a>
 
                     <a href="#">
-                        <img class="sns" src="/resources/img/logo(kakao).png" alt="">
+                        <img class="sns" src="/resources/img/common/main/logo(kakao).png" alt="">
                     </a>
                 </section>
 

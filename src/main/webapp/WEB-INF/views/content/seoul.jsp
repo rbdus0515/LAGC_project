@@ -33,7 +33,7 @@
 	                    <div class="placeSec">
 	                        <div class="blank"></div>
 	                        <div class="placeImg">
-	                            <img src=${img.contentImg} class="contImg">
+	                            <img src="${img.contentImg}" class="contImg">
 	                        </div>
 	                        <div class="placeTitSec">
 	                            <div class="tit">

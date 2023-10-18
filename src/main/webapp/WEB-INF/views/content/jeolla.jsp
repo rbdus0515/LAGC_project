@@ -27,121 +27,24 @@
             <!-- 메인 이미지들 -->
             <div class="mainArea">
                 <div class="imgArea">
-                    <!-- 첫번째 네개 이미지 -->
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeolla/여수해상케이블카.png" class="contImg" onclick="aa()">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                여수해상케이블카
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeolla/오동도.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                오동도
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeolla/여수아쿠아플라넷.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                여수 아쿠아플라넷
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeolla/섬진강기차마을.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                섬진강 기차마을
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 두번째 네개 이미지 -->
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeolla/대한다원보성녹차밭.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                대한다원보성녹차밭
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeolla/정남진편백숲우드랜드.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                정남진 편백숲 우드랜드
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeolla/광주호호수생태원.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                광주호 호수생태원
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeolla/이사부크루즈국동유람선.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                이사부크루즈 국동유람선
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
+                
+                    <!-- for문 돌리기 이미지 -->
+                    <c:forEach var="img" items="${list}" varStatus="vs">
+	                    <div class="placeSec">
+	                        <div class="blank"></div>
+	                        <div class="placeImg">
+	                            <img src="${img.contentImg}" class="contImg">
+	                        </div>
+	                        <div class="placeTitSec">
+	                            <div class="tit">
+	                                ${img.travelName}
+	                            </div>
+	                            <div class="delArea">
+	                                <button type="button" class="xBtn">X</button>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </c:forEach>
 
                     <!-- 세번째 네개 이미지(+) -->
                     <div class="placeSec" id="addPlus">

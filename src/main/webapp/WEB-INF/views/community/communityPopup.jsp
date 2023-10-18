@@ -38,7 +38,7 @@
                 </section>
     
                 <section id="com-top-r-sec">
-                    <img src="/semiProjectImage/Vector.png" id="com-XIcon">
+                    <img src="/resources/img/community/Vector.png" id="com-XIcon">
                 </section>
             </section>
     
@@ -87,7 +87,7 @@
     
                                 <section class="pop-botBox-doubleComment-box-right">                          
                                     <button>
-                                        <img src="/semiProjectImage/Vector.png" class="com-doubleComment-XIcon">
+                                        <img src="/resources/img/community/Vector.png" class="com-doubleComment-XIcon">
                                     </button>
                                 </section>
                             </div>
@@ -118,7 +118,7 @@
     
                                 <section class="pop-botBox-doubleComment-box-right">                          
                                     <button>
-                                        <img src="/semiProjectImage/Vector.png" class="com-doubleComment-XIcon">
+                                        <img src="/resources/img/community/Vector.png" class="com-doubleComment-XIcon">
                                     </button>
                                 </section>
                             </div>
@@ -149,7 +149,7 @@
     
                                 <section class="pop-botBox-doubleComment-box-right">                          
                                     <button>
-                                        <img src="/semiProjectImage/Vector.png" class="com-doubleComment-XIcon">
+                                        <img src="/resources/img/community/Vector.png" class="com-doubleComment-XIcon">
                                     </button>
                                 </section>
                             </div>

@@ -21,13 +21,13 @@ public class ContentController {
 	@GetMapping("/detail")
 	public String selectContentDetail(String area, Model model) {
 		
-		System.out.println("area : " + area);
+		// System.out.println("area : " + area);
 		
 		List<Content> list = service.selectContentDetail(area);
 		
-		for(Content ct : list) {
+		/* for(Content ct : list) {
 			System.out.println(ct);
-		}
+		} */
 		
 		model.addAttribute("list", list);
 		
