@@ -34,29 +34,30 @@
                     <div class="profile">
                         <div class="profile-box">
                             <div class="profile-1">
-                                <a href="#"><img class="profile-image" src="/resources/img/myPage/프로필 사진.png"></a>
+                                <a href="managingProfile"><img class="profile-image" src="/resources/img/myPage/프로필 사진.png">
                                 <div class="profile-button">
-                                    <a href="#">프로필 관리</a>
+                                    <a href="managingProfile">프로필 관리</a>
                                 </div>
+                                </a>
                             </div>
 
                             <div class="profile-2">
                                 <div class="profile-2-1">
                                     <div class="profile-2-1-name">
                                         <div class="profile-n">이름</div>
-                                        <a href="#"><div class="profile-name">홍길동</div></a>
+                                        <div class="profile-name">${loginMember.memberName}</div>
                                     </div>
 
                                     <div class="profile-2-1-nick">
                                         <div class="profile-n2">닉네임</div>
-                                        <a href="#"><div class="profile-nickname">춘식이</div></a>
+                                        <div class="profile-nickname">${loginMember.memberNickname}</div>
                                     </div>
                                 </div>
                                 
                                 <div class="profile-2-2">
                                     <div class="profile-2-2-email">
                                         <div class="profile-e">이메일</div>
-                                        <a href="#"><div class="profile-email">hong9@gmail.com</div></a>
+                                        <div class="profile-email">${loginMember.memberEmail}</div>
                                     </div>
                                 </div>
                             </div>

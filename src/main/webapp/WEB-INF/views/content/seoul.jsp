@@ -27,179 +27,24 @@
             <!-- 메인 이미지들 -->
             <div class="mainArea">
                 <div class="imgArea">
-                    <!-- 첫번째 네개 이미지 -->
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/여의도한강공원.png" class="contImg" onclick="aa()">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                여의도 한강공원
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/남산타워.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                남산타워
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/서울식물원.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                서울식물원
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/올림픽공원.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                올림픽공원
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 두번째 네개 이미지 -->
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/광화문.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                광화문
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/전쟁기념관.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                전쟁기념관
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/국립중앙박물관.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                국립중앙박물관
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/청계천.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                청계천
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
                     
-                    <!-- 세번째 네개 이미지 -->
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/북촌한옥마을.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                북촌한옥마을
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/노량진수산시장.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                노량진 수산시장
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/남대문.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                남대문
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/seoul/롯데월드.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                롯데월드
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- for문 돌리기 이미지 -->
+					<c:forEach var="img" items="${list}" varStatus="vs">
+	                    <div class="placeSec">
+	                        <div class="blank"></div>
+	                        <div class="placeImg">
+	                            <img src=${img.contentImg} class="contImg">
+	                        </div>
+	                        <div class="placeTitSec">
+	                            <div class="tit">
+	                                ${img.travelName}
+	                            </div>
+	                            <div class="delArea">
+	                                <button type="button" class="xBtn">X</button>
+	                            </div>
+	                        </div>
+	                    </div>
+					</c:forEach>
 
                     <!-- 네번째 네개 이미지(+) -->
                     <div class="placeSec" id="addPlus">

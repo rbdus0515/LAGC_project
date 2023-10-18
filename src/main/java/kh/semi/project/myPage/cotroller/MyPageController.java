@@ -19,5 +19,16 @@ public class MyPageController {
 	public String MyPagePage() {
 		
 		return "myPage/myPage";
+		
+	}
+	
+	/** 마이페이지 이동 컨트롤러
+	 * @return
+	 */
+	@GetMapping("/managingProfile")
+	public String managingProfileForward() {
+		
+		return "myPage/managingProfile";
+		
 	}
 }
