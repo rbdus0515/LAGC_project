@@ -17,7 +17,7 @@
 
         <section class="logoSection">
             <a href="#">
-                <img class="logo" src="/resources/img/logo.png">
+                <img class="logo" src="/resources/img/common/main/로고.png">
             </a>
         </section>
         
