@@ -5,10 +5,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.SessionAttribute;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 import kh.semi.project.common.model.service.AjaxService;
+import kh.semi.project.member.model.dto.Member;
 
 @Controller
+@SessionAttributes({"loginMember"})
 public class AjaxController {
 
 	@Autowired
@@ -20,10 +24,15 @@ public class AjaxController {
 	 */
 	@GetMapping("/selectId")
 	@ResponseBody
-	public int selectId(
-			@RequestParam(value="memberId", required = false) String memberId) {
-		
+	public int selectId(String memberId,
+						@SessionAttribute Member loginMember
+			) {
 		int result = service.selectId(memberId);
+		
+		if(loginMember.getMemberId().equals(memberId)) {
+			result = 0;
+			
+		}
 		
 		return result;
 	}
@@ -34,10 +43,16 @@ public class AjaxController {
 	 */
 	@GetMapping("/selectNickname")
 	@ResponseBody
-	public int selectNickname(
-			@RequestParam(value="nickname", required = false) String nickname) {
+	public int selectNickname( String nickname,
+							   @SessionAttribute Member loginMember
+			) {
 		
 		int result = service.selectNickname(nickname);
+		
+		if(loginMember.getMemberNickname().equals(nickname)) {
+			result = 0;
+			
+		}
 		
 		return result;
 	}
