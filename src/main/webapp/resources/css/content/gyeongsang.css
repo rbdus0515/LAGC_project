@@ -46,7 +46,10 @@ body > section {
     height: auto;
     line-height: 375px;
     font-size: 4rem;
-    padding-left: 1300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
 }
 
 /* main */
@@ -177,5 +180,9 @@ body > section {
     #leftArea, #rightArea {
         display: none;
     }
+    
+    #top {
+	    font-size: 3rem;
+	}
 
 }

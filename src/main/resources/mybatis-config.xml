@@ -24,6 +24,7 @@
 	<typeAliases>
 
 		<typeAlias type="kh.semi.project.member.model.dto.Member" alias="Member" />
+		<typeAlias type="kh.semi.project.content.model.dto.Content" alias="Content" />
 
 	</typeAliases>
 
@@ -33,6 +34,7 @@
 	
 		<mapper resource="/mappers/member-mapper.xml" />
 		<mapper resource="/mappers/myPage-mapper.xml" />
+		<mapper resource="/mappers/content-mapper.xml" />
 		
 	</mappers>
 
