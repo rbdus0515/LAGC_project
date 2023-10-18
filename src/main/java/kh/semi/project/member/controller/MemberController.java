@@ -69,7 +69,6 @@ public class MemberController {
 		
 	}
 
-
 	// 회원가입 페이지 이동
 	@GetMapping("/signUp")
 	public String signUp() {
@@ -77,7 +76,6 @@ public class MemberController {
 		return "/member/signUp";
 	}
 	
-
 	// 회원가입 진행
 	@PostMapping
 	public String signUp(Member inputMember,
@@ -100,8 +98,15 @@ public class MemberController {
 		
 		return path;
 	}
-
 	
+	/** 로그인
+	 * @param inputMember
+	 * @param model
+	 * @param ra
+	 * @param resp
+	 * @param referer
+	 * @return
+	 */
 	@PostMapping("/login")
 	public String memberLogin( Member inputMember, Model model, 
 			RedirectAttributes ra, HttpServletResponse resp,

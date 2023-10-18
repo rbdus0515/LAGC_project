@@ -50,53 +50,55 @@
 
                     <div>
                         <p>아이디</p>
-                        <input class="input" type="text" name="id" value="${loginMember.memberId}">
-                        <div id="idMessage">5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.</div><br>
+                        <input class="input" type="text" name="memberId" id="memberId" value="${loginMember.memberId}">
+                        <div id="idMessage"></div><br>
                     </div>
                     
                     <div>
                         <p>비밀번호</p>
-                        <input class="input" type="password" name="pw" id="memberPw">
+                        <input class="input" type="password" name="memberPw" id="memberPw">
                     </div>
                     
                     <div>
                         <p>비밀번호 확인</p>
                         <input class="input" type="password" name="pwCheck" id="memberPwConfirm">
-                        <div id="pwMessage">영어,숫자,특수문자(!,@,#,-,_) 6~20글자 사이만 사용 가능합니다.</div><br>
+                        <div id="pwMessage"></div><br>
                     </div>
 
                     <div>
                         <p>이름</p>
-                        <input class="input" type="text" name="name" value="${loginMember.memberName}">
-                        <div id="nameMessage">한글만 작성 가능합니다.</div><br>
+                        <input class="input" type="text" name="name" id="memberName" value="${loginMember.memberName}">
+                        <div id="nameMessage"></div><br>
                     </div>
-
+                    
                     <div>
                         <p>이메일</p>
                         <div class="emailCheck">
-                            <input class="input" type="email" name="email" value="${loginMember.memberEmail}">
+                            <input class="input" type="email" name="memberEmail" id="memberEmail" value="${loginMember.memberEmail}">
                             <button id="sendAuthKeyEmail" type="button" class="btn">인증번호 받기</button>
                         </div>
+                        <div id="emailMessage"></div><br>
                     </div>
 
                     <div>
                          <p>인증번호 입력</p>
                          <div class="emailCheck">
-                             <input class="input" type="text" name="checkEmail">
+                             <input class="input" type="text" name="checkEmail" id="checkEmail">
                              <button id="certifyBtnEmail" type="button" class="btn">인증하기</button>
                          </div>
-                         <div id="emailMessage"></div><br>
+                         <div id="authKeyMessage"></div><br>
                     </div>
 
                     <div>
                         <p>전화번호</p>
-                        <input class="input" type="tel" name="phoneNo" placeholder="- 제외">
+                        <input class="input" type="tel" name="phoneNo" id="phoneNo" placeholder="- 제외">
+                        <div id="phoneMessage"></div><br>
                     </div>
 
                     <div>
                         <p>닉네임</p>
-                        <input class="input" type="text" name="nickname" value="${loginMember.memberNickname}">
-                        <div id="nameMessage">영문, 한글만 작성 가능합니다.</div><br>
+                        <input class="input" type="text" name="nickname" id="nickname" value="${loginMember.memberNickname}">
+                        <div id="nicknameMessage"></div><br>
                     </div>
 
 

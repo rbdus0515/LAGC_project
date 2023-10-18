@@ -35,6 +35,7 @@
 		<mapper resource="/mappers/member-mapper.xml" />
 		<mapper resource="/mappers/myPage-mapper.xml" />
 		<mapper resource="/mappers/content-mapper.xml" />
+		<mapper resource="/mappers/Ajax-mapper.xml" />
 		
 	</mappers>
 
