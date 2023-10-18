@@ -11,6 +11,7 @@
 </head>
 <body>
 	
+	<jsp:include page="/WEB-INF/views/common/header.jsp" />
 	<section id="clientServicePage">
 
         <nav>
@@ -28,9 +29,9 @@
                 
         </nav>
 
-        <header>
+        <section id="headImageContainer">
             <section id="clService-headImage-box"></section>
-        </header>
+        </section>
 
         <main>
 
@@ -170,6 +171,7 @@
 
         </main>
     </section>
+    <jsp:include page="/WEB-INF/views/common/footer.jsp" />
 
     <script src="https://kit.fontawesome.com/27d1f811dc.js" crossorigin="anonymous"></script>
 </body>
