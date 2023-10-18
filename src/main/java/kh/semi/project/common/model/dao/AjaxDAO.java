@@ -20,8 +20,6 @@ public class AjaxDAO {
 
 		int result = sqlSession.selectOne("ajaxMapper.selectId", memberId);
 		
-		System.out.println(result);
-		
 		return result;
 	}
 
