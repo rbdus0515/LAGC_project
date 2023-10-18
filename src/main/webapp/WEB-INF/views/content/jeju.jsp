@@ -27,121 +27,24 @@
             <!-- 메인 이미지들 -->
             <div class="mainArea">
                 <div class="imgArea">
-                    <!-- 첫번째 네개 이미지 -->
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeju/오설록티뮤지엄.png" class="contImg" onclick="aa()">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                오설록 티뮤지엄
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeju/동백포레스트.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                동백포레스트
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeju/협재해수욕장.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                협재해수욕장
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeju/만장굴.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                만장굴
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 두번째 네개 이미지 -->
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeju/휴애리자연생활공원.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                휴애리자연생활공원
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeju/9.81파크제주.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                9.81 파크 제주
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeju/비밀의숲.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                비밀의숲
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="placeSec">
-                        <div class="blank"></div>
-                        <div class="placeImg">
-                            <img src="/resources/img/content/jeju/감따남.png" class="contImg">
-                        </div>
-                        <div class="placeTitSec">
-                            <div class="tit">
-                                감따남
-                            </div>
-                            <div class="delArea">
-                                <button type="button" class="xBtn">X</button>
-                            </div>
-                        </div>
-                    </div>
+                
+                    <!-- for문 돌리기 이미지 -->
+                    <c:forEach var="img" items="${list}" varStatus="vs">
+	                    <div class="placeSec">
+	                        <div class="blank"></div>
+	                        <div class="placeImg">
+	                            <img src="${img.contentImg}" class="contImg">
+	                        </div>
+	                        <div class="placeTitSec">
+	                            <div class="tit">
+	                                ${img.travelName}
+	                            </div>
+	                            <div class="delArea">
+	                                <button type="button" class="xBtn">X</button>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </c:forEach>
 
                     <!-- 세번째 네개 이미지(+) -->
                     <div class="placeSec" id="addPlus">
