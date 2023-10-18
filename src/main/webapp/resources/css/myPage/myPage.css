@@ -47,7 +47,7 @@
 
 .modalBodyIcon {
     display: flex;
-    justify-content: baseline;
+    justify-content: space-around;
 }
 
 .icon > a {
@@ -105,7 +105,7 @@ main {
 /* footer 크기 설정 */
 footer {
     height: 15%;
-    margin-top: 10%;
+    margin-top: 200px;
 }
 
 /* 윗부분(프로필, 1대1 문의, 좋아요 목록, 작성한 댓글) 컨테이너 설정 */
@@ -675,4 +675,5 @@ footer {
 	height: 330px;
     margin-left: 40%;
     font-size: 1.5625rem;
+    cursor: auto;
 }
