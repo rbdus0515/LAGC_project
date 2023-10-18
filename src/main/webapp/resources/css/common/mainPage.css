@@ -21,11 +21,6 @@ body {
     z-index: 1;
 }
 
-
-section {
-    /* border : 1px solid black; */
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -86,11 +81,12 @@ html {
     border-radius: 30px;
     border: transparent;
     position: absolute;
-    top: 81%;
+    top: 85%;
     left: 90%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
     font-size: 1.25rem;
+    cursor : pointer;
 }
 
 #mainPage-btn2 {
@@ -99,11 +95,12 @@ html {
     border-radius: 30px;
     border: transparent;
     position: absolute;
-    top: 88%;
+    top: 91.5%;
     left: 90%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
     font-size: 1.25rem;
+    cursor : pointer;
 }
 
 
@@ -150,16 +147,29 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: -1;
 }
 
-#recommend-img > img {
+.recommend-place-btn {
     width: 640px;
     height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.recommend-place-btn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+.recommend-place-btn {
+    transition: 0.3s ease-in-out;
 }
 
 /* ???? ????? ??? ??? */
 .category {
     display: inline-block;
+    z-index: 10;
 }
 
 .dropdown-category {
@@ -167,7 +177,6 @@ html {
     background-color: #f9f9f9;
     /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
 .dropdown-category a {
@@ -201,7 +210,7 @@ img {
 }
 
 .region-place-btn {
-    display: flex;
+    display: flex;  
     align-items: center;
     margin-top: 50px;
     margin-bottom: 24px;
@@ -243,6 +252,7 @@ button:hover {
     background-color: #868686;
     color: #fff;
     transition-duration: 0.3s;
+    cursor : pointer;
 }
 
 .place-move-motion:hover {

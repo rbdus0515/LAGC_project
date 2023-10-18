@@ -25,7 +25,7 @@
 			<section id="logo-weather">
 				<section class="empty"></section>
 				<section>
-					<a href="/"> <img src="/resources/img/로고.png" id="LAGCLogo">
+					<a href="/"> <img src="/resources/img/common/main/로고.png" id="LAGCLogo">
 					</a>
 				</section>
 
@@ -47,7 +47,7 @@
 						<input type="text" id="input-search" name="" autocapitalize="off"
 							placeholder="">
 						<button id="searchBtn">
-							<img id="search-img" src="/resources/img/Vector.png">
+							<img id="search-img" src="/resources/img/common/main/Vector.png">
 						</button>
 					</div>
 				</form>

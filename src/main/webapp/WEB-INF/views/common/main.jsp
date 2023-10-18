@@ -31,7 +31,7 @@
 	
 	<!-- 메인페이지 최상단 -->
 	<section id="main-container">
-		<img id="mainPage-img" src="/resources/img/덕수궁 2.png">
+		<img id="mainPage-img" src="/resources/img/common/main/덕수궁 2.png">
 		<section id="title-container">
 			<span class="black-text">"</span> <span class="white-text">TRAVEL</span>
 			<span class="black-text">KOREA</span> <span class="white-text">"</span>
@@ -42,7 +42,7 @@
 		</a>
 				
 		<button type="button">
-			<img id="infoBtn" src="/resources/img/이용방법 버튼.png">
+			<img id="infoBtn" src="/resources/img/common/main/이용방법 버튼.png">
 		</button>
 		
 		<a	href="#shortcut-region-place-btn">
@@ -50,7 +50,7 @@
 		</a> 
 		
 		<a href="#main-container"
-			><img id="topBtn"	src="/resources/img/탑버튼.png">
+			><img id="topBtn" src="/resources/img/common/main/탑버튼.png">
 		</a>
 		
 		
@@ -96,7 +96,7 @@
 	</section>
 	<section id="recommend-img">
 		<section class="recommend-empty"></section>
-		<img src="/resources/img/추천1.png"> <img src="/resources/img/추천2.png">
+		<div><img class="recommend-place-btn" src="/resources/img/common/main/추천1.png"></div> <div><img class="recommend-place-btn" src="/resources/img/common/main/추천2.png"></div>
 		<section class="recommend-empty"></section>
 	</section>
 
@@ -112,19 +112,19 @@
 	<section class="region-place">
 		<div class="region-empty"></div>
 		<div id="testContent">
-			<img class="place-move-motion" src="/resources/img/서울 추천 콘텐츠 1.png">
+			<img class="place-move-motion" src="/resources/img/common/main/서울 추천 콘텐츠 1.png">
 			<p>여의도 한강공원</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/서울 추천 콘텐츠 2.png">
+			<img class="place-move-motion" src="/resources/img/common/main/서울 추천 콘텐츠 2.png">
 			<p>남산타워</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/서울 추천 콘텐츠 3.png">
+			<img class="place-move-motion" src="/resources/img/common/main/서울 추천 콘텐츠 3.png">
 			<p>서울식물원</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/서울 추천 콘텐츠 4.png">
+			<img class="place-move-motion" src="/resources/img/common/main/서울 추천 콘텐츠 4.png">
 			<p>올림픽공원</p>
 		</div>
 		<div class="region-empty"></div>
@@ -138,19 +138,19 @@
 	<section class="region-place">
 		<div class="region-empty"></div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/경기 인천 추천 콘텐츠 1.png">
+			<img class="place-move-motion" src="/resources/img/common/main/경기 인천 추천 콘텐츠 1.png">
 			<p>애버랜드</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/경기 인천 추천 콘텐츠 2.png">
+			<img class="place-move-motion" src="/resources/img/common/main/경기 인천 추천 콘텐츠 2.png">
 			<p>캐리비안 베이</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/경기 인천 추천 콘텐츠 3.png">
+			<img class="place-move-motion" src="/resources/img/common/main/경기 인천 추천 콘텐츠 3.png">
 			<p>한국민속촌</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/경기 인천 추천 콘텐츠 4.png">
+			<img class="place-move-motion" src="/resources/img/common/main/경기 인천 추천 콘텐츠 4.png">
 			<p>광명 동굴</p>
 		</div>
 		<div class="region-empty"></div>
@@ -164,19 +164,19 @@
 	<section class="region-place">
 		<div class="region-empty"></div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/강원 추천 콘텐츠 1.png">
+			<img class="place-move-motion" src="/resources/img/common/main/강원 추천 콘텐츠 1.png">
 			<p>정동진 모래시계공원</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/강원 추천 콘텐츠 2.png">
+			<img class="place-move-motion" src="/resources/img/common/main/강원 추천 콘텐츠 2.png">
 			<p>설악산</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/강원 추천 콘텐츠 3.png">
+			<img class="place-move-motion" src="/resources/img/common/main/강원 추천 콘텐츠 3.png">
 			<p>대관령 하늘목장</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/강원 추천 콘텐츠 4.png">
+			<img class="place-move-motion" src="/resources/img/common/main/강원 추천 콘텐츠 4.png">
 			<p>영금정</p>
 		</div>
 		<div class="region-empty"></div>
@@ -190,19 +190,19 @@
 	<section class="region-place">
 		<div class="region-empty"></div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/충청 추천 콘텐츠 1.png">
+			<img class="place-move-motion" src="/resources/img/common/main/충청 추천 콘텐츠 1.png">
 			<p>탑평리</p>
 		</div>
 		<div>
-			<img class="place-move-motion"  src="/resources/img/충청 추천 콘텐츠 2.png">
+			<img class="place-move-motion"  src="/resources/img/common/main/충청 추천 콘텐츠 2.png">
 			<p>대청호</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/충청 추천 콘텐츠 3.png">
+			<img class="place-move-motion" src="/resources/img/common/main/충청 추천 콘텐츠 3.png">
 			<p>청남대</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/충청 추천 콘텐츠 4.png">
+			<img class="place-move-motion" src="/resources/img/common/main/충청 추천 콘텐츠 4.png">
 			<p>만리포 해수욕장</p>
 		</div>
 		<div class="region-empty"></div>
@@ -216,19 +216,19 @@
 	<section class="region-place">
 		<div class="region-empty"></div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/전라 추천 콘텐츠 1.png">
+			<img class="place-move-motion" src="/resources/img/common/main/전라 추천 콘텐츠 1.png">
 			<p>여수 해상케이블카</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/전라 추천 콘텐츠 2.png">
+			<img class="place-move-motion" src="/resources/img/common/main/전라 추천 콘텐츠 2.png">
 			<p>오동도</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/전라 추천 콘텐츠 3.png">
+			<img class="place-move-motion" src="/resources/img/common/main/전라 추천 콘텐츠 3.png">
 			<p>여수 아쿠아플라넷</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/전라 추천 콘텐츠 4.png">
+			<img class="place-move-motion" src="/resources/img/common/main/전라 추천 콘텐츠 4.png">
 			<p>섬진강 기차마을</p>
 		</div>
 		<div class="region-empty"></div>
@@ -242,19 +242,19 @@
 	<section class="region-place">
 		<div class="region-empty"></div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/경상 추천 콘텐츠 1.png">
+			<img class="place-move-motion" src="/resources/img/common/main/경상 추천 콘텐츠 1.png">
 			<p>해동용궁사</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/경상 추천 콘텐츠 2.png">
+			<img class="place-move-motion" src="/resources/img/common/main/경상 추천 콘텐츠 2.png">
 			<p>포항 스페이스 워크</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/경상 추천 콘텐츠 3.png">
+			<img class="place-move-motion" src="/resources/img/common/main/경상 추천 콘텐츠 3.png">
 			<p>감천 문화마을</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/경상 추천 콘텐츠 4.png">
+			<img class="place-move-motion" src="/resources/img/common/main/경상 추천 콘텐츠 4.png">
 			<p>호미곶 해맞이광장</p>
 		</div>
 		<div class="region-empty"></div>
@@ -268,19 +268,19 @@
 	<section class="region-place">
 		<div class="region-empty"></div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/제주 추천 콘텐츠 1.png">
+			<img class="place-move-motion" src="/resources/img/common/main/제주 추천 콘텐츠 1.png">
 			<p>오설록 티뮤지엄</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/제주 추천 콘텐츠 2.png">
+			<img class="place-move-motion" src="/resources/img/common/main/제주 추천 콘텐츠 2.png">
 			<p>동백포레스트</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/제주 추천 콘텐츠 3.png">
+			<img class="place-move-motion" src="/resources/img/common/main/제주 추천 콘텐츠 3.png">
 			<p>협재 해수욕장</p>
 		</div>
 		<div>
-			<img class="place-move-motion" src="/resources/img/제주 추천 콘텐츠 4.png">
+			<img class="place-move-motion" src="/resources/img/common/main/제주 추천 콘텐츠 4.png">
 			<p>만장굴</p>
 		</div>
 		<div class="region-empty"></div>
