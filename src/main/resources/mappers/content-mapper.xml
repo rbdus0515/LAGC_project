@@ -14,7 +14,7 @@
 		<id> 태그 : PK 역할 컬럼 - 필드 매핑 
 		<result> 태그 : <id>제외 나머지 
 		
-		-->
+	-->
 
 	<resultMap type="Content" id="content_rm">
 

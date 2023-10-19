@@ -75,7 +75,7 @@
                             <p>공지사항</p>
                             <div></div>
                             <section id="noticeBtnSec">
-                                <a>
+                                <a href="/notice/noticeList">
                                     <button class="fa-solid fa-plus"></button>
                                 </a>
                             </section>
