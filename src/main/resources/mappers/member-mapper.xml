@@ -55,6 +55,21 @@
 	        ,NULL , DEFAULT, DEFAULT, DEFAULT)
 	</insert>
 	
+	<update id="updateMember">
+		UPDATE "MEMBER" SET 
+		MEMBER_ID = #{memberId}, 
+		MEMBER_NM = #{memberName}, 
+		EMAIL = #{memberEmail}, 
+		PHONE = #{memberPhone}, 
+		NICKNAME = #{memberNickname} 
+		WHERE MEMBER_NO = #{memberNo}
+	</update>
 
+	<select id="selectPw" resultType="_int">
+		SELECT MEMBER_PW
+		FROM "MEMBER"
+		WHERE MEMBER_DEL_FL = 'N'
+		AND MEMBER_NO = #{memberNo}
+	</select>
 
 </mapper>

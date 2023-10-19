@@ -74,7 +74,6 @@ public class AjaxServiceImpl implements AjaxService{
 		return dao.selectNickname(nickname);
 	}
 
-	
 	/** 이메일 인증키 전송 서비스
 	 *
 	 */
@@ -135,7 +134,6 @@ public class AjaxServiceImpl implements AjaxService{
     return result;
 
 	}
-
 	
 	/** 이메일 인증키 확인 서비스 
 	 *

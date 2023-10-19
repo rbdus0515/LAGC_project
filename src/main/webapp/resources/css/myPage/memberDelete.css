@@ -13,80 +13,32 @@ body{
     height: 100vh;
 }
 
+.confirm{ color : green; }
+.error{ color : red; }
+
 
 /********** 홈 로고 ******************************************************/
-#homelogo{
+.logo{
     width: 47px;
     height: 57px;
     margin: 20px;
 }
 
-/********** 프로필 사진 ******************************************************/
-.profileContainer{
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 5em;
-}
-
-.imgContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.img-wrapper {
-    height: 200px;
-    width: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: #e6e6e6 1px solid;
-
-    margin-bottom: 20px;
-}
-
-.img-wrapper > img {
-    height: 100%;
-}
-
-label {
-    cursor: pointer;
-    font-size: 1em;
-}
-
-#chooseFile {
-    visibility: hidden;
-}
-
 
 /********** 정보 입력 ******************************************************/
+
 .mainContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.loginContainer {
-    width: 600px;
-    height: 610px;
-    background-color: #e6e6e6;
-    border-radius: 20px;
+.delete{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.id, .password{
-    width: 283px;
-    display: flex;
-    flex-direction: column;
-}
-
-.confirm{ color : green; }
-.error{ color : red; }
-
-.emailCheck {
-    display: flex;
+    margin-top: 100px;
 }
 
 .input{
@@ -99,6 +51,13 @@ label {
     background-color: #e6e6e6;
 }
 
+.confirmArea{
+    display: flex;
+}
+
+#deleteConfirm{
+    margin: 0 20px;
+}
 
 .btn{
     width: 7rem;
