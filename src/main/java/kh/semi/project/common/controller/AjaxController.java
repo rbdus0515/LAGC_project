@@ -25,17 +25,23 @@ public class AjaxController {
 	@GetMapping("/selectId")
 	@ResponseBody
 	public int selectId(String memberId,
-						@SessionAttribute Member loginMember
+						@SessionAttribute(value = "loginMember", required = false) Member loginMember
 			) {
 		int result = service.selectId(memberId);
 		
-		if(loginMember.getMemberId().equals(memberId)) {
+		if(loginMember != null) {
+			
+			if(loginMember.getMemberId().equals(memberId)) {
 			result = 0;
+			}
+			
+		} else {
 			
 		}
 		
 		return result;
 	}
+	
 	
 	/** 닉네임 중복 검사
 	 * @param memberId
@@ -44,15 +50,22 @@ public class AjaxController {
 	@GetMapping("/selectNickname")
 	@ResponseBody
 	public int selectNickname( String nickname,
-							   @SessionAttribute Member loginMember
+							   @SessionAttribute(value = "loginMember", required = false) Member loginMember
 			) {
 		
 		int result = service.selectNickname(nickname);
 		
-		if(loginMember.getMemberNickname().equals(nickname)) {
-			result = 0;
+		if(loginMember != null) {
+			
+			if(loginMember.getMemberNickname().equals(nickname)) {
+				result = 0;
+				
+			}
+			
+		} else {
 			
 		}
+		
 		
 		return result;
 	}

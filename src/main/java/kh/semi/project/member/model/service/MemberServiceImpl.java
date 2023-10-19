@@ -14,6 +14,7 @@ public class MemberServiceImpl implements MemberService{
 	@Autowired
 	private MemberDAO dao;
 	
+	@Autowired
 	private BCryptPasswordEncoder bcrypt;
 
 	@Override

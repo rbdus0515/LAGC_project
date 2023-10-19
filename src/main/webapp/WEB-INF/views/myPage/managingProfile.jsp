@@ -91,7 +91,7 @@
 
                     <div>
                         <p>전화번호</p>
-                        <input class="input" type="tel" name="phoneNo" id="phoneNo" placeholder="- 제외">
+                        <input class="input" type="tel" name="phoneNo" id="phoneNo" placeholder="' - ' 제외" maxlength="11">
                         <div id="phoneMessage"></div><br>
                     </div>
 
