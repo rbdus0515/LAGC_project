@@ -67,7 +67,7 @@
                         <div class="man-to-man-bar">1:1 문의</div>
                         <div class="man-to-man">
                             <div class="mtm-date">23.09.19</div>
-                            <div class="mtm-title"><a href="#">동궁과 월지 문의</a></div>
+                            <div class="mtm-title"><a href="#">동궁과 월지 문의</a></div> <!-- hidden 넣은 관리자 1대1 문의에 연결  -->
                             <div class="mtm-status">답변완료</div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div class="my-comment">
-                        <div class="comment-title">작성한 댓글</div>
+                        <div class="comment-title">작성한 후기</div>
                         <div class="comment-main">
                             <div class="comment">
                                 <div class="comment-loca">해운대 블루라인파크</div>
@@ -127,7 +127,7 @@
                 <div class="my-plan-1">
                     <a href="/myPlan/myPlans"><img class="my-plan-img" src="/resources/img/myPage/추천 콘텐츠 18.jpg"></a>
                     <div class="plan-main">
-                        <div class="plan-title"><a href="#">수도권 여행</a></div>
+                        <div class="plan-title"><a href="/myPlan/myPlans">수도권 여행</a></div>
                         <div class="plan-D-day">D-8</div>
                         <div class="plan-area">
                             <div class="plan-area-title">서울</div>
@@ -170,7 +170,7 @@
 
                 </div>
                 <div class="my-plan-1">
-                    <button class="plan-add"><a href="#">+ 일정 추가하기</a></button>
+                    <button class="plan-add"><a href="/myPlan/myPlans">+ 일정 추가하기</a></button>
                 </div>
 
             </div>
