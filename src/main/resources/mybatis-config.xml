@@ -25,6 +25,7 @@
 
 		<typeAlias type="kh.semi.project.member.model.dto.Member" alias="Member" />
 		<typeAlias type="kh.semi.project.content.model.dto.Content" alias="Content" />
+		<typeAlias type="kh.semi.project.community.model.dto.Community" alias="Community"/>
 
 	</typeAliases>
 
@@ -36,7 +37,8 @@
 		<mapper resource="/mappers/myPage-mapper.xml" />
 		<mapper resource="/mappers/content-mapper.xml" />
 		<mapper resource="/mappers/Ajax-mapper.xml" />
-		
+		<mapper resource="/mappers/community-mapper.xml" />
+			
 	</mappers>
 
 </configuration>
