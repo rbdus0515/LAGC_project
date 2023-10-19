@@ -52,7 +52,7 @@
 	        , #{memberEmail}
 	        , #{memberPhone}
 	        , #{memberNickname}
-	        , DEFAULT, DEFAULT, DEFAULT)
+	        ,NULL , DEFAULT, DEFAULT, DEFAULT)
 	</insert>
 	
 	<update id="updateMember">

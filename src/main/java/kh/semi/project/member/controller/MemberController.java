@@ -84,7 +84,7 @@ public class MemberController {
 	}
 	
 	// 회원가입 진행
-	@PostMapping
+	@PostMapping("/signUp")
 	public String signUp(Member inputMember,
 						RedirectAttributes ra ) {
 		

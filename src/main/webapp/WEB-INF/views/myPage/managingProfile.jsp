@@ -81,6 +81,7 @@
                     <div>
                         <p>전화번호</p>
                         <input class="input" type="tel" name="memberPhone" id="memberPhone" placeholder="- 제외" value="${loginMember.memberPhone}">
+
                         <div id="phoneMessage"></div><br>
                     </div>
 
