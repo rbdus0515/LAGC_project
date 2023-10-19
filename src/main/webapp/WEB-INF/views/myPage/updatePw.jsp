@@ -53,6 +53,17 @@
                         <input class="input" type="text" name="memberId" id="memberId" value="${loginMember.memberId}">
                         <div id="idMessage"></div><br>
                     </div>
+                    
+                    <div>
+                        <p>비밀번호</p>
+                        <input class="input" type="password" name="memberPw" id="memberPw">
+                    </div>
+                    
+                    <div>
+                        <p>비밀번호 확인</p>
+                        <input class="input" type="password" name="memberPwConfirm" id="memberPwConfirm">
+                        <div id="pwMessage"></div><br>
+                    </div>
 
                     <div>
                         <p>이름</p>
@@ -81,7 +92,6 @@
                     <div>
                         <p>전화번호</p>
                         <input class="input" type="tel" name="memberPhone" id="memberPhone" placeholder="- 제외" value="${loginMember.memberPhone}">
-
                         <div id="phoneMessage"></div><br>
                     </div>
 
@@ -91,33 +101,19 @@
                         <div id="nicknameMessage"></div><br>
                     </div>
 
-                    <hr>
-                    <br>
-
-                    <div>
-                        <p>비밀번호</p>
-                        <input class="input" type="password" name="memberPwConfirm" id="memberPwConfirm">
-                        <div id="pwMessage"></div><br>
-                    </div>
 
                 </section>
 
                 <section class="btnContainer">
                     <button class="btn" type="submit">수정</button>
-                    <a class="btn" href="/member/updatePw">비밀번호 변경</a>
-                    <a class="btn" href="/member/delete">회원 탈퇴</a>
+                    <a href="/member/updatePw"><button class="btn" type="button">비밀번호 변경</button></a>
+                    <a href="/member/delete"><button class="btn" type="button">회원 탈퇴</button></a>
                 </section>
 
             </div>
 
         </form>
     </main>
-
-    <script>
-        
-        const currentEmail = "${loginMember.memberEmail}";
-
-    </script>
 
     <script src="/resources/js/managingProfile.js"></script>
 

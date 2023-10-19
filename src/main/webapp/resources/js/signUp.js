@@ -4,7 +4,8 @@ const checkObj = {
     "memberPwConfirm" : false,
     "memberName" : false,
     "memberEmail" : false,
-    "memberNickname" : false,
+    "phoneNo" : false,
+    "nickname" : false,
     "authKey" : false
 };
 
@@ -30,7 +31,7 @@ memberId.addEventListener("input", () => {
 
     if(  regEx.test(memberId.value)  ){ // 유효한 경우
 
-        fetch("/member/signUp?memberId=" + memberId.value)
+        fetch("/selectId?memberId=" + memberId.value)
         .then(res => res.text())
         .then(count => {
             if(count == 0) {
@@ -186,6 +187,93 @@ memberName.addEventListener("input", ()=>{
 
 });
 
+// -------------- 전화번호 유효성 검사 -----------------
+const phoneNo = document.getElementById("phoneNo");
+const phoneMessage = document.getElementById('phoneMessage');
+
+// 전화번호가 입력이 되었을 때
+phoneNo.addEventListener("input", () => {
+
+    // 전화번호 입력이 되지 않은 경우
+    if(phoneNo.value.trim() == ''){
+        phoneMessage.innerText = "숫자만 입력해주세요.";
+        phoneMessage.classList.remove("confirm", "error");
+        checkObj.phoneNo = false;
+        phoneNo.value = ""; 
+        return;
+    }
+
+    // 정규표현식으로 유효성 검사
+    const regEx = /^[0-9]{10,11}$/;
+
+    if(regEx.test(phoneNo.value)){ // 유효
+        phoneMessage.innerText = "전화번호 형식이 유효합니다.";
+        phoneMessage.classList.add("confirm");
+        phoneMessage.classList.remove("error");
+        checkObj.phoneNo = true;
+
+    } else{ // 무효
+        phoneMessage.innerText = "전화번호 형식이 유효하지 않습니다";
+        phoneMessage.classList.add("error");
+        phoneMessage.classList.remove("confirm");
+        checkObj.phoneNo = false;
+    }
+
+});
+
+// ---------------- 닉네임 유효성 검사 ------------------------
+const nickname = document.getElementById("nickname");
+const nicknameMessage = document.getElementById("nicknameMessage");
+
+nickname.addEventListener("input", () => {
+
+    if(nickname.value.trim().length == 0){
+        nickname.value = ""; 
+
+        nicknameMessage.innerText = "영어, 한글, 숫자 포함 10글자 이내로 입력해주세요.";
+
+        // confirm, error 클래스 삭제해서 검정 글씨로 만들기
+        nicknameMessage.classList.remove("confirm", "error");
+
+        checkObj.nickname = false; // 빈칸 == 유효 X
+        return;
+    }
+
+    const regEx = /^[가-힣a-zA-Z0-9]{1,10}$/;
+
+    if(  regEx.test(nickname.value)  ){ // 유효한 경우
+
+        fetch("/selectNickname?nickname=" + nickname.value)
+        .then(res => res.text())
+        .then(count => {
+            if(count == 0) {
+                nicknameMessage.innerText = "사용 가능한 닉네임입니다";
+                nicknameMessage.classList.add("confirm"); // .confirm 스타일 적용
+                nicknameMessage.classList.remove("error"); // .error 스타일 제거
+                checkObj.nickname = true; // 유효 O
+            } else {
+                nicknameMessage.innerText = "이미 사용중인 닉네임입니다";
+                nicknameMessage.classList.add("error"); // .error 스타일 적용
+                nicknameMessage.classList.remove("confirm"); // .confirm 스타일 제거
+                checkObj.nickname = false; // 유효 X
+
+            }
+        })
+        .catch(err => {console.log(err)});
+
+
+
+    } else{ // 유효하지 않은 경우(무효인 경우)
+        nicknameMessage.innerText = "닉네임 형식이 유효하지 않습니다";
+        nicknameMessage.classList.add("error"); // .error 스타일 적용
+        nicknameMessage.classList.remove("confirm"); // .confirm 스타일 제거
+
+        checkObj.nickname = false; // 유효 X
+    }
+});
+
+
+
 // ----------------------- 이메일 유효성 검사 / 인증번호 ----------------------------
 // 이메일 유효성 검사
 const memberEmail = document.getElementById("memberEmail");
@@ -207,7 +295,6 @@ memberEmail.addEventListener("input", () => {
         return;
     }
 
-
     // 정규 표현식을 이용해서 유효한 형식이지 판별
     // 1) 정규표현식 객체 생성
     const regEx = /^[A-Za-z\d\-\_]{4,}@[가-힣\w\-\_]+(\.\w+){1,3}$/;
@@ -215,31 +302,12 @@ memberEmail.addEventListener("input", () => {
     // 2) 입력 받은 이메일과 정규식 일치 여부 판별
     if(  regEx.test(memberEmail.value)  ){ // 유효한 경우
 
-        /* fetch() API를 이용한 ajax(비동기 통신) : 이메일 중복*/
-        // url : /dupCkeck/email
-
-        // GET 방식
-        fetch("/dupCkeck/email?email=" + memberEmail.value)
-        .then(res => res.text())
-        .then(count => {
-            // count : 중복되면 1, 중복 아니면 0
-            if(count == 0) {
-                emailMessage.innerText = "사용 가능한 이메일입니다";
-                emailMessage.classList.add("confirm"); // .confirm 스타일 적용
-                emailMessage.classList.remove("error"); // .error 스타일 제거
-                checkObj.memberEmail = true; // 유효 O
-            } else {
-                emailMessage.innerText = "이미 사용중인 이메일입니다";
-                emailMessage.classList.add("error"); // .error 스타일 적용
-                emailMessage.classList.remove("confirm"); // .confirm 스타일 제거
-                checkObj.memberEmail = false; // 유효 X
-
-            }
-        })
-        .catch(err => {console.log(err)});
-
-
-
+        emailMessage.innerText = "사용 가능한 이메일입니다";
+        emailMessage.classList.add("confirm"); // .confirm 스타일 적용
+        emailMessage.classList.remove("error"); // .error 스타일 제거
+       
+        checkObj.memberEmail = true; // 유효 O
+ 
     } else{ // 유효하지 않은 경우(무효인 경우)
         emailMessage.innerText = "이메일 형식이 유효하지 않습니다";
         emailMessage.classList.add("error"); // .error 스타일 적용
@@ -252,7 +320,7 @@ memberEmail.addEventListener("input", () => {
 // --------------------- 이메일 인증 ---------------------
 
 // 인증번호 발송
-const sendAuthKeyBtn = document.getElementById("sendAuthKeyBtn");
+const sendAuthKeyEmail = document.getElementById("sendAuthKeyEmail");
 const authKeyMessage = document.getElementById("authKeyMessage");
 let authTimer;
 let authMin = 4;
@@ -261,17 +329,15 @@ let authSec = 59;
 // 인증번호를 발송한 이메일 저장
 let tempEmail;
 
-sendAuthKeyBtn.addEventListener("click", function(){
-    authMin = 4;
+sendAuthKeyEmail.addEventListener("click", function(){
+    authMin = 2;
     authSec = 59;
 
     checkObj.authKey = false;
 
     if(checkObj.memberEmail){ // 중복이 아닌 이메일인 경우
 
-
-        /* fetch() API 방식 ajax */
-        fetch("/sendEmail/signUp?email="+memberEmail.value)
+        fetch("/email/sendAuthKey?memberEmail="+memberEmail.value)
         .then(resp => resp.text())
         .then(result => {
             if(result > 0){
@@ -288,9 +354,8 @@ sendAuthKeyBtn.addEventListener("click", function(){
         
 
         alert("인증번호가 발송 되었습니다.");
-
         
-        authKeyMessage.innerText = "05:00";
+        authKeyMessage.innerText = "03:00";
         authKeyMessage.classList.remove("confirm");
 
         authTimer = window.setInterval(()=>{
@@ -322,18 +387,18 @@ sendAuthKeyBtn.addEventListener("click", function(){
 });
 
 // 인증 확인
-const authKey = document.getElementById("authKey");
-const checkAuthKeyBtn = document.getElementById("checkAuthKeyBtn");
+const checkEmail = document.getElementById("checkEmail");
+const certifyBtnEmail = document.getElementById("certifyBtnEmail");
 
-checkAuthKeyBtn.addEventListener("click", function(){
+certifyBtnEmail.addEventListener("click", function(){
 
     if(authMin > 0 || authSec > 0){ // 시간 제한이 지나지 않은 경우에만 인증번호 검사 진행
         /* fetch API */
-        const obj = {"inputKey":authKey.value, "email":tempEmail}
+        const obj = {"inputKey":checkEmail.value, "memberEmail":tempEmail}
         const query = new URLSearchParams(obj).toString()
         // inputKey=123456&email=user01
 
-        fetch("/sendEmail/checkAuthKey?" + query)
+        fetch("/email/checkAuthKey?" + query)
         .then(resp => resp.text())
         .then(result => {
             if(result > 0){

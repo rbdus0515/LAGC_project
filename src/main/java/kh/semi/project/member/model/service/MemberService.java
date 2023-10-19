@@ -16,4 +16,12 @@ public interface MemberService {
 	 */
 	int signUp(Member inputMember);
 
+	/** 회원 정보 수정 서비스
+	 * @param inputMember
+	 * @return
+	 */
+	int updateMember(Member inputMember);
+
+	int selectPw(Member inputMember);
+
 }

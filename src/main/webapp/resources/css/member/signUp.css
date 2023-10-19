@@ -92,7 +92,7 @@ p span::after {
 }
 
 /* 이메일 인증번호 버튼 */
-#email-btn {
+#sendAuthKeyEmail, #certifyBtnEmail {
     width: 100%;
     max-width: 102px;
     height: 46px;
@@ -103,6 +103,8 @@ p span::after {
     align-items: center;
     justify-content: center;
 }
+
+
 
 #profile {
     display: flex;

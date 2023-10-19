@@ -3,13 +3,17 @@ package kh.semi.project.member.controller;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -24,6 +28,9 @@ public class MemberController {
 
 	@Autowired
 	private MemberService service;
+	
+	@Autowired
+	private BCryptPasswordEncoder bcrypt;
 	
 	/** 로그인 이동
 	 * @return
@@ -77,7 +84,7 @@ public class MemberController {
 	}
 	
 	// 회원가입 진행
-	@PostMapping
+	@PostMapping("/signUp")
 	public String signUp(Member inputMember,
 						RedirectAttributes ra ) {
 		
@@ -108,7 +115,7 @@ public class MemberController {
 	 * @return
 	 */
 	@PostMapping("/login")
-	public String memberLogin( Member inputMember, Model model, 
+	public String memberLogin(Member inputMember, Model model, 
 			RedirectAttributes ra, HttpServletResponse resp,
 			@RequestHeader(value = "referer") String referer) {
 	
@@ -138,4 +145,81 @@ public class MemberController {
 		
 	}
 
+	/** 회원 정보 수정
+	 * @return
+	 */
+	@PostMapping("/info")
+	public String updateMember(@SessionAttribute("loginMember") Member loginMember, // 로그인 멤버
+							   Member inputMember,	 // 수정할 정보 
+							   RedirectAttributes ra,
+							   Model model,
+							   @RequestHeader(value = "referer") String referer
+			) {
+		
+		String path = "redirect:";
+		String msg = null;
+				
+		inputMember.setMemberNo( loginMember.getMemberNo() );
+		
+		int pwCheck = service.selectPw(inputMember);
+		
+		if (pwCheck > 0 ) {
+			
+			msg = "비밀번호가 일치하지 않습니다.";
+			path += referer;
+			ra.addFlashAttribute("msg", msg);
+			
+			return path;
+			
+		}
+		
+		int result =  service.updateMember(inputMember);
+		
+		if(result > 0 ) {
+			
+			msg = "회원 정보 수정이 완료되었습니다.";
+			path += "/";
+			
+			model.addAttribute("loginMember", inputMember);
+			ra.addFlashAttribute("msg", msg);
+			
+		} else {
+			
+			msg = "프로필 수정이 완료되지 않았습니다.";
+			path += referer;
+			ra.addFlashAttribute("msg", msg);
+		}
+		
+		return path;
+	}
+	
+	/** 비밀번호 수정 이동
+	 * @return
+	 */
+	@GetMapping("/updatePw")
+	public String updatePw() {
+	
+		return "/member/updatePw";
+	}
+	
+	/** 회원 탈퇴로 이동
+	 * @return
+	 */
+	@GetMapping("/delete")
+	public String delete() {
+	
+		return "/myPage/memberDelete";
+	}
+	
+	/** 회원 탈퇴로 이동
+	 * @return
+	 */
+	@PostMapping("/deleteMember")
+	public String deleteMember() {
+	
+		return "/myPage/memberDelete";
+	}
+	
+	
+	
 }

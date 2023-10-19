@@ -16,12 +16,12 @@
 <body>
     
     <header>
-        <a href="/"><img id="logo" src="/resources/img/로고.png"></a>
+        <a href="/"><img id="logo" src="/resources/img/common/main/로고.png"></a>
     </header>
 
     <main>
         <section class="input-section">
-            <img id="input-logo" src="/resources/img/로고.png">
+            <img id="input-logo" src="/resources/img/common/main/로고.png">
         </section>
 
         <!-- 회원가입 input -->
@@ -42,13 +42,13 @@
                 
                 <section class="input-section">
                     <p><span>비밀번호 확인</span></p>
-                    <input type="password" name="memberPwConfirm" id="memberPwConfirm" maxlength="20" placeholder="비밀번호 확인">
+                    <input type="password" name="pwCheck" id="memberPwConfirm" maxlength="20" placeholder="비밀번호 확인">
                     <div><span id="pwMessage">영어,숫자,특수문자(!,@,#,-,_) 6~20글자 사이로 입력해주세요.</span></div>
                 </section>
                 
                 <section class="input-section">
                     <p><span>이름</span></p>
-                    <input type="text" name="memberName" id="memberName" placeholder="이름 입력">
+                    <input type="text" name="name" id="memberName" placeholder="이름 입력">
                     <div><span id="nameMessage">한글2~5글자 사이로 입력해주세요.</span></div>
                 </section>
                 
@@ -58,35 +58,40 @@
                 </section>
                 
                 <section class="input-section">
-                        <p><span>이메일</span></p>
+                    <p><span>이메일</span></p>
                     <section id="id-section">
                         <input type="email" name="memberEmail" placeholder="이메일 입력" id="memberEmail">
                         <section id="id-margin"></section>
-                        <button id="email-btn" type="button">인증번호<br>받기</button>
+                        <button id="sendAuthKeyEmail" type="button">인증번호<br>받기</button>
                     </section>
-                    <div><span id="emailMessage">메일을 받을 수 있는 이메일을 입력해주세요.</span></div>
+                    <div id="emailMessage"></div>
                 </section>
                 
                 <section class="input-section">
-                    <p>이메일 인증번호 확인</p>
-                    <input type="text">
-                    <div><span id="authKeyMessage"></span></div>
+                    <p><span>이메일 인증번호 확인</span></p>
+                    <section id="id-section">
+                        <input type="text" name="checkEmail" id="checkEmail">
+                        <section id="id-margin"></section>
+                        <button id="certifyBtnEmail" type="button">인증하기</button>
+                    </section>
+                    <div id="authKeyMessage"></div>
                 </section>
-
+                
                 <section class="input-section">
                     <p>전화번호</p>
-                    <input type="tel" name="memberPhone" placeholder="'-' 기호 포함">
+                    <input type="tel" id="phoneNo" name="phoneNo" placeholder="' - ' 제외" maxlength="11">
+                    <div id="phoneMessage"></div>
                 </section>
                 
                 <section class="input-section">
                     <p><span>닉네임</span></p>
-                    <input type="text" name="memberNickname" placeholder="닉네임 입력">
-                    <div></div>
+                    <input type="text" name="nickname" id="nickname" placeholder="닉네임 입력">
+                    <div id="nicknameMessage"></div>
                 </section>
 
                 
                 <section class="input-section" id="profile">
-                    <img id="profile-img" src="/resources/img/member/signUp/프로필아이콘.png">
+                    <img id="profile-img" src="/resources/img/common/main/프로필아이콘.png">
                     <section id="profile-margin"></section>
                     <label for="upload-img-btn">
                         프로필 이미지 업로드

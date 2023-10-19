@@ -18,6 +18,7 @@ public class ContentController {
 	@Autowired
 	private ContentService service;
 	
+	// content 상세페이지 조회
 	@GetMapping("/detail")
 	public String selectContentDetail(String area, Model model) {
 		
