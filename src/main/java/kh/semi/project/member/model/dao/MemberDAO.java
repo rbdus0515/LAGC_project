@@ -12,9 +12,12 @@ public class MemberDAO {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 	
+	/** 로그인 DAO
+	 * @param inputMember
+	 * @return
+	 */
 	public Member memberLogin(Member inputMember) {
 
-		
 		return sqlSession.selectOne("memberMapper.memberLogin", inputMember);
 	}
 
@@ -25,6 +28,24 @@ public class MemberDAO {
 	public int signUp(Member inputMember) {
 		
 		return sqlSession.insert("memberMapper.signUp", inputMember);
+	}
+
+	/** 회원 정보 수정 DAO
+	 * @param inputMember
+	 * @return
+	 */
+	public int updateMember(Member inputMember) {
+
+		return sqlSession.update("memberMapper.updateMember", inputMember);
+	}
+
+	/** 비밀번호 조회 DAO
+	 * @param inputMember
+	 * @return
+	 */
+	public String selectPw(Member inputMember) {
+
+		return sqlSession.selectOne("memberMapper.selectPw", inputMember);
 	}
 
 }
