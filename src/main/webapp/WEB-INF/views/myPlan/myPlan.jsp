@@ -109,9 +109,13 @@
             </section>
             </div>
             <div id="map" style="width:100%;height:100vh;">
+            	<div class="storage">
+                    <button><img class="left-arrow" src="/resources/img/myPage/left-arrow.png"></button>
+                </div>
+                
                 <div class="이용방법"><a href="#">이용방법</a></div>
 
-                <div class="log-in"><a href="#">로그인</a></div>
+                <div class="log-in"><a href="/myPage/myPages"><img class="map-profile" src="/resources/img/myPage/프로필 사진.png"></a></div>
 
             </div>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=246a0fc52dbb0ac008083682df20832d"></script>
