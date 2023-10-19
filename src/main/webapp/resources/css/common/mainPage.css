@@ -147,13 +147,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: -1;
 }
 
 .recommend-place-btn {
     width: 640px;
     height: auto;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: -1;
 }
 
 .recommend-place-btn:hover {
@@ -169,7 +169,7 @@ html {
 /* ???? ????? ??? ??? */
 .category {
     display: inline-block;
-    z-index: 10;
+    z-index: 1;
 }
 
 .dropdown-category {
